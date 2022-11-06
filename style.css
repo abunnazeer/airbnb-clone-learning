@@ -32,11 +32,16 @@ a {
   width: 90%;
   margin: auto;
 }
+
+/* ::: Header style :: */
 .main-header {
+  border-bottom: 2px solid #d1cece;
+}
+
+.header-box {
   padding: 10px 30px;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #d1cece;
 }
 .logo {
   flex: 1;
@@ -112,4 +117,46 @@ a {
   border-bottom: 2px solid gray;
   color: gray;
   transition: 0.2s all;
+}
+/* :::: menu category ::: */
+.custom-flex {
+  display: flex;
+  align-items: center;
+}
+.cat {
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 35px;
+  margin: 30px 0;
+  overflow: hidden;
+  flex: 1;
+}
+.cat-list-style {
+  color: gray;
+  height: 70px;
+  text-align: center;
+}
+.cat-list-style img {
+  width: 25px;
+  margin-bottom: 5px;
+}
+.cat-list-style:hover {
+  border-bottom: 2px solid gray;
+  color: gray;
+  transition: 0.2s all;
+  color: #000;
+  cursor: pointer;
+}
+
+.cat-btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+
+  border: 1px solid grey;
+  background-color: #fff;
+}
+
+.cat-btn .fa-sliders {
+  margin-right: 10px;
 }
