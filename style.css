@@ -22,3 +22,94 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.main-header {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #d1cece;
+}
+.logo {
+  flex: 1;
+}
+.logo img {
+  width: 170px;
+}
+.nav-bar {
+  flex: 1;
+}
+.nav-bar ul {
+  display: flex;
+  gap: 30px;
+}
+.account-icon {
+  border-radius: 21px;
+  background-color: #fff;
+  box-shadow: 0 0 1px 1px hsl(0, 0%, 88%);
+  border: 1px solid var(--clr-grey-1);
+  /* padding: 5px 10px; */
+  margin-left: 10px;
+}
+.account-icon:hover {
+  cursor: pointer;
+  transition: 0.9s all;
+  box-shadow: 0 2px 1px 1px gray;
+}
+
+.fa-user,
+.fa-bars {
+  background-color: red;
+  border-radius: 100%;
+  padding: 8px;
+  margin: 5px;
+}
+.fa-user {
+  background-color: grey;
+  color: white;
+}
+
+.fa-bars {
+  background-color: transparent;
+}
+.fa-globe {
+  border-radius: 100%;
+  padding: 8px;
+  margin: 0 8px;
+}
+.fa-globe:hover {
+  background-color: grey;
+  /* color: white; */
+}
+.host {
+  border-radius: 22px;
+  padding: 8px;
+  margin: 0 8px;
+}
+.host:hover {
+  background-color: grey;
+}
+.menu {
+  cursor: pointer;
+}
+.menu .active {
+  padding-bottom: 10px;
+  color: #000;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.active,
+.default:hover {
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+  color: gray;
+  transition: 0.2s all;
+}
