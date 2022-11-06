@@ -1,0 +1,24 @@
+:root {
+  /* Dark shades of primary color */
+  --clr-primary-1: = #ff385c;
+  --clr-primary-2: = #ff385c;
+  --clr-primary-2: = #ff385c;
+  /* main primary color */
+
+  /* dark black  color */
+  --clr-back-1: = #222222;
+  /* dark grey  color */
+  --clr-grey-1: = #717171;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
