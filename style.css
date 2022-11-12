@@ -270,7 +270,25 @@ a {
 
   /* grid-auto-rows: minmax(400px, auto); */
 }
-
+.carausel-container {
+  position: absolute;
+  top: 170px;
+}
+.c-left,
+.c-right {
+  border-radius: 20px;
+  padding: 3px 6px;
+  border: 1px solid grey;
+  background-color: #fff;
+}
+.c-left {
+  position: relative;
+  left: 10px;
+}
+.c-right {
+  position: relative;
+  left: 280px;
+}
 .image-style img {
   width: 100%;
 
