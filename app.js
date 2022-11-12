@@ -19,7 +19,7 @@ hideMenu.addEventListener('click', function () {
 });
 
 btnLeft.addEventListener('click', function () {
-  scrollPosition = scrollContainer.scrollBy(-500, 0);
+  scrollContainer.scrollBy(-500, 0);
 });
 
 btnRight.addEventListener('click', function () {

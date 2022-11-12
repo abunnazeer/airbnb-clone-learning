@@ -35,7 +35,11 @@ a {
 
 /* ::: Header style :: */
 .main-header {
-  border-bottom: 2px solid #d1cece;
+  background-color: #fff;
+  border-bottom: 1px solid #efeded;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header-box {
@@ -180,22 +184,28 @@ a {
   transition: 0.2s all;
 }
 /* :::: menu category ::: */
+
+.category {
+  position: sticky;
+  top: 78px;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 1px 0px 0px hsl(0deg 0% 79%);
+}
 .custom-flex {
   display: flex;
   align-items: center;
 }
 .cat {
-  position: sticky;
   display: flex;
   gap: 35px;
-  margin: 30px 50px;
+  margin: 10px 50px;
   overflow: hidden;
   flex: 1;
   scroll-behavior: smooth;
   transition: 0.3s ease-in-out;
 }
 .cat-list-style {
-  /* max-width: 30px; */
   color: gray;
   height: 70px;
   text-align: center;
@@ -248,48 +258,67 @@ a {
   left: 82vw;
   bottom: 3px;
 }
-.img-box-container{
- 
+
+.img-box-container {
+  margin-top: 20px;
+}
+.content-box {
+  position: relative;
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-auto-rows: minmax(400px, auto); */
 }
 
-.content-box{
-display: grid;
-gap: 10px 20px;
-grid-template-columns: repeat(4, 1fr);
-grid-auto-rows: minmax(100px, auto);
-}
-.img-box img{
+.image-style img {
   width: 100%;
-  height: 100%;
+
+  height: 336px;
   border-radius: 20px;
 }
-.img-content{
+.img-content {
   display: grid;
-  grid-template-columns: minmax(0,1fr) max-content;
+  grid-template-columns: minmax(0, 1fr) max-content;
   gap: 2px 8px;
 }
 
-.img-title{
-  grid-column: 1 ;
+.img-title {
+  grid-column: 1;
 }
-.rating{
-  grid-column:  3;
+.rating {
+  grid-column: 3;
 }
-.desc{
-  grid-column: 1 ;
+.desc {
+  grid-column: 1;
   font-weight: normal;
   color: gray;
 }
-.date{
-  grid-column: 1 ;
+.date {
+  grid-column: 1;
   font-weight: normal;
   color: gray;
-  
 }
-.price{
-  grid-column: 1 ;
+.price {
+  grid-column: 1;
 }
-.days{
+.days {
   font-weight: normal;
   color: gray;
+}
+
+.show-map {
+  position: relative;
+  margin: auto;
+  width: 10vw;
+}
+
+.show-map button {
+  position: fixed;
+  bottom: 30px;
+  height: 50px;
+  width: 130px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #000;
 }
