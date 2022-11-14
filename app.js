@@ -148,6 +148,14 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 let imageIndex = 0;
+function imageSource(i) {
+  imgPath.forEach(function (imgsrc, indexNumber) {
+    if (i === indexNumber) {
+      imgsrc.src = allLocaton[indexNumber].imagePath[imageIndex];
+    }
+  });
+}
+
 cLeft.forEach(function (leftKey, i) {
   leftKey.addEventListener('click', function () {
     const itemLenth = allLocaton[0].imagePath.length;
@@ -156,11 +164,12 @@ cLeft.forEach(function (leftKey, i) {
     if (imageIndex < 0) {
       imageIndex = itemLenth - 1;
     }
-    imgPath.forEach(function (imgsrc, indexNumber) {
-      if (i === indexNumber) {
-        imgsrc.src = allLocaton[indexNumber].imagePath[imageIndex];
-      }
-    });
+    // imgPath.forEach(function (imgsrc, indexNumber) {
+    //   if (i === indexNumber) {
+    //     imgsrc.src = allLocaton[indexNumber].imagePath[imageIndex];
+    //   }
+    // });
+    imageSource(i);
   });
 });
 
@@ -172,10 +181,11 @@ cRight.forEach(function (rightKey, i) {
     if (imageIndex > itemLenth - 1) {
       imageIndex = 0;
     }
-    imgPath.forEach(function (imgSrc, indexNumber) {
-      if (i === indexNumber) {
-        imgSrc.src = allLocaton[indexNumber].imagePath[imageIndex];
-      }
-    });
+    // imgPath.forEach(function (imgSrc, indexNumber) {
+    //   if (i === indexNumber) {
+    //     imgSrc.src = allLocaton[indexNumber].imagePath[imageIndex];
+    //   }
+    // });
+    imageSource(i);
   });
 });
